@@ -35,6 +35,7 @@ Checkbox-Classifier-CNN/
 |-- inference.py
 |-- train.py
 ```
+Model Weights naming: checkbox_classifier_batchsize_epochs_learningrate.pt
 
 # Inference
 Inference script can be used to make predictions on images using trained models. Below is the command-line method to use the inference script.

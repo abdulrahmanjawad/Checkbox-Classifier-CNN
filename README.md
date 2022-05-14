@@ -1,6 +1,24 @@
 # Checkbox-Classifier-CNN
 A deep learning model that classifies checkboxes in an image.
 
+# Directory Structure
+Below is the struture for how to setup the directory and dataset paths etc. for easier walkthrough.
+```bash
+Checkbox-Classifier-CNN/
+|-- data/
+|   |-- checked/
+|   |-- other/
+|   |-- unchecked/
+|-- save/
+|   |-- checkbox_classifier_16_20_002.pt
+|-- data exploration.ipynb
+|-- inference.py
+|-- train.py
+|-- evaluate.py
+|-- requirements.txt
+```
+Model Weights naming: checkbox_classifier_batchsize_epochs_learningrate.pt
+
 # Getting Started
 Make sure [Python 3](https://www.python.org/downloads/) is already installed.
 
@@ -20,22 +38,11 @@ Make sure [Python 3](https://www.python.org/downloads/) is already installed.
       ```bash
       pip install -r requirements.txt
       ```
-
-# Directory Structure
-Below is the struture for how to setup the directory and dataset paths etc. for easier walkthrough.
-```bash
-Checkbox-Classifier-CNN/
-|-- data/
-|   |-- checked/
-|   |-- other/
-|   |-- unchecked/
-|-- save/
-|   |-- checkbox_classifier_16_20_002.pt
-|-- data exploration.ipynb
-|-- inference.py
-|-- train.py
-```
-Model Weights naming: checkbox_classifier_batchsize_epochs_learningrate.pt
+ 
+ ### Download pretrained weights
+ 1. Create a folder names `save` inside the repo. Refer to the directory structure for understanding
+ 2. Download weights from [Google Drive Link](https://drive.google.com/drive/folders/1y56-0YsTCSJlH7Xvl0r-KPp4Rt9LAl19?usp=sharing)
+ 3. Place the weights in `save` folder.
 
 # Inference
 Inference script can be used to make predictions on images using trained models. Below is the command-line method to use the inference script.

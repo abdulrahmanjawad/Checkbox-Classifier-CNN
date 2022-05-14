@@ -65,6 +65,11 @@ Default hyperparameters used:
 
 ## Evaluation
 Model was evaluated in every epoch after training loop. Dataset was split 75-25 train-val. Validation set was used to assess model performance.
+Model can also be evaluated for confusion matrix and precision/recall. Use the command-line below:
+```bash
+python evaluate.py -m path/to/model
+```
+e.g `python evaluate.py -m save/checkbox_classifier_16_20_01.pt`
 
 # Training
 To train the model use the command-line below:
